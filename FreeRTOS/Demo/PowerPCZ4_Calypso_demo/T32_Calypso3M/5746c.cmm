@@ -1,0 +1,97 @@
+;==================================================================================================
+;
+;   (c) Copyright 2015 Freescale Semiconductor Inc.
+;   
+;   This program is free software; you can redistribute it and/or modify it under
+;   the terms of the GNU General Public License (version 2) as published by the
+;   Free Software Foundation >>>> AND MODIFIED BY <<<< the FreeRTOS exception.
+;
+;   ***************************************************************************
+;   >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+;   >>!   distribute a combined work that includes FreeRTOS without being   !<<
+;   >>!   obliged to provide the source code for proprietary components     !<<
+;   >>!   outside of the FreeRTOS kernel.                                   !<<
+;   ***************************************************************************
+;
+;   This program is distributed in the hope that it will be useful,
+;   but WITHOUT ANY WARRANTY; without even the implied warranty of
+;   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;   GNU General Public License for more details.
+;   
+;   You should have received a copy of the GNU General Public License
+;   along with this program; if not, write to the Free Software
+;   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+;
+;==================================================================================================
+
+
+;local &filename
+;entry &filename
+
+;=== elf-file for debugging ===
+&filename="../bin/demo_flash"
+&optimizePLL=0
+
+;set titles
+ Title "Calypso3M - core_0 (z4)"
+
+;arrange debugger windows
+; framepos      5.    5. 150.  50.
+
+;set equal paths
+&pwd=os.pwd()
+
+
+;=========================================================================
+; System settings  
+;=========================================================================
+; CPU setup
+SYStem.RESet
+SYStem.BdmClock 4MHz
+SYStem.CPU MPC5748G
+SYStem.CONFIG.CORE 1. 1. ; select core 1
+SYStem.CONFIG.SLAVE OFF
+SYStem.Option.WATCHDOG OFF
+SYStem.OPTION DUALPORT ON
+SYStem.Option.SLOWRESET ON
+SYStem.DETECT CPU
+;DIAG 3117 1
+SYStem.Up
+
+
+
+;switch to HLL mode debugging
+MODE.HLL
+  
+  
+wait 500ms
+
+
+;initialize internal SRAM.
+Data.Set EA:0x40000000--0x4007FFFF %quad 0x0
+
+
+map.bonchip 0x0--0x4007ffff
+
+
+DO flash.cmm &filename
+
+
+;display source
+Data.List
+
+;clear all breakpoints
+Break.delete /ALL
+
+R.S IP _start
+
+register /sl
+
+v.w ui32_ms_cnt TaskTick  test_init_data  test_init_small_data
+
+
+
+ENDDO
+
+
+

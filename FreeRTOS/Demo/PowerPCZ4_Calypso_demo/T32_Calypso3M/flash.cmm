@@ -1,0 +1,134 @@
+;==================================================================================================
+;
+;   (c) Copyright 2015 Freescale Semiconductor Inc.
+;   
+;   This program is free software; you can redistribute it and/or modify it under
+;   the terms of the GNU General Public License (version 2) as published by the
+;   Free Software Foundation >>>> AND MODIFIED BY <<<< the FreeRTOS exception.
+;
+;   ***************************************************************************
+;   >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+;   >>!   distribute a combined work that includes FreeRTOS without being   !<<
+;   >>!   obliged to provide the source code for proprietary components     !<<
+;   >>!   outside of the FreeRTOS kernel.                                   !<<
+;   ***************************************************************************
+;
+;   This program is distributed in the hope that it will be useful,
+;   but WITHOUT ANY WARRANTY; without even the implied warranty of
+;   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;   GNU General Public License for more details.
+;   
+;   You should have received a copy of the GNU General Public License
+;   along with this program; if not, write to the Free Software
+;   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+;
+;==================================================================================================
+
+
+;
+;========= Script for flash initialization =========
+;  
+
+local &elfname
+entry &elfname
+
+;========================================================================
+; Flash declaration 
+;=========================================================================
+
+print "Starting FLASH sector creation:"
+  
+FLASH.RESet
+
+; Low address space
+FLASH.Create 1. 0x00404000--0x00407FFF NOP    Quad 0x0001    ; BAF - read only
+FLASH.Create 1. 0x00610000--0x0061FFFF TARGET Quad 0x0007    ; 16 KB HSM code block 2
+FLASH.Create 1. 0x00620000--0x0062FFFF TARGET Quad 0x0009    ; 16 KB HSM code block 3
+FLASH.Create 1. 0x00F8C000--0x00F8FFFF TARGET Quad 0x0000    ; 16 KB code block 0
+FLASH.Create 1. 0x00FC0000--0x00FC7FFF TARGET Quad 0x0002    ; 32 KB code block 2
+FLASH.Create 1. 0x00FC8000--0x00FCFFFF TARGET Quad 0x0003    ; 32 KB code block 3
+FLASH.Create 1. 0x00FD0000--0x00FD7FFF TARGET Quad 0x0004    ; 32 KB code block 4
+FLASH.Create 1. 0x00FD8000--0x00FDFFFF TARGET Quad 0x0005    ; 32 KB code block 5
+FLASH.Create 1. 0x00FE0000--0x00FEFFFF TARGET Quad 0x0006    ; 64 KB code block 0
+FLASH.Create 1. 0x00FF0000--0x00FFFFFF TARGET Quad 0x0008    ; 64 KB code block 1
+
+; Mid address space
+FLASH.Create 2. 0x00F90000--0x00F93FFF TARGET Quad 0x0100    ; 16 KB code block 1
+FLASH.Create 2. 0x00F94000--0x00F97FFF TARGET Quad 0x0101    ; 16 KB code block 2
+FLASH.Create 2. 0x00F98000--0x00F9BFFF TARGET Quad 0x0102    ; 16 KB code block 3
+FLASH.Create 2. 0x00F9C000--0x00F9FFFF TARGET Quad 0x0103    ; 16 KB code block 4
+FLASH.Create 2. 0x00FA0000--0x00FA3FFF TARGET Quad 0x0104    ; 16 KB code block 5
+FLASH.Create 2. 0x00FA4000--0x00FA7FFF TARGET Quad 0x0105    ; 16 KB code block 6
+FLASH.Create 2. 0x00FA8000--0x00FABFFF TARGET Quad 0x0106    ; 16 KB code block 7
+FLASH.Create 2. 0x00FAC000--0x00FAFFFF TARGET Quad 0x0107    ; 16 KB code block 8
+
+; High address space
+FLASH.Create 3. 0x00F80000--0x00F83FFF TARGET Quad 0x0200    ; HSM data block 0
+FLASH.Create 3. 0x00F84000--0x00F87FFF TARGET Quad 0x0201    ; HSM data block 1
+
+; Large (256k) address space
+FLASH.Create 4. 0x01000000--0x0103FFFF TARGET Quad 0x0300    ; 256 KB Flash block 0
+FLASH.Create 4. 0x01040000--0x0107FFFF TARGET Quad 0x0301    ; 256 KB Flash block 1
+FLASH.Create 4. 0x01080000--0x010BFFFF TARGET Quad 0x0302    ; 256 KB Flash block 2
+FLASH.Create 4. 0x010C0000--0x010FFFFF TARGET Quad 0x0303    ; 256 KB Flash block 3
+FLASH.Create 4. 0x01100000--0x0113FFFF TARGET Quad 0x0304    ; 256 KB Flash block 4
+FLASH.Create 4. 0x01140000--0x0117FFFF TARGET Quad 0x0305    ; 256 KB Flash block 5
+FLASH.Create 4. 0x01180000--0x011BFFFF TARGET Quad 0x0306    ; 256 KB Flash block 6
+FLASH.Create 4. 0x011C0000--0x011FFFFF TARGET Quad 0x0307    ; 256 KB Flash block 7
+FLASH.Create 4. 0x01200000--0x0123FFFF TARGET Quad 0x0308    ; 256 KB Flash block 8
+FLASH.Create 4. 0x01240000--0x0127FFFF TARGET Quad 0x0309    ; 256 KB Flash block 9
+
+; UTEST address space
+FLASH.Create 6. 0x00400000--0x00403FFF NOP    Quad 0x0500    ; UTEST - OTP
+
+; Overlay enabled mapping
+FLASH.CreateALIAS 0x08A00000--0x08FFFFFF 0x00A00000   ; Small & medium flash blocks
+FLASH.CreateALIAS 0x09000000--0x09FFFFFF 0x01000000   ; Large flash blocks
+
+FLASH.TARGET E:0x40040000 E:0x40048000 0x8000 ~~/demo/powerpc/flash/quad/c55fm5746m.bin /STACKSIZE 0x0400
+
+;========================================================================
+; Flash programming example
+;
+; Flash programming speed is about three times faster when memory class E:
+; is used for data buffer (DUALPORT memory access). For DUALPORT access it
+; is required to setup MemAccess NEXUS for both, NEXUS and JTAG debugger.
+
+print "Flash Programming start"
+FLASH.UNLOCK ALL
+FLASH.ReProgram ALL /Erase
+Data.Load.Elf &elfname.elf /Quad
+
+FLASH.ReProgram OFF
+
+;========================================================================
+
+;Batch Job for debugging in internal FLASH
+;clear the TRACE32 screen
+WinCLEAR
+
+SYStem.RESet
+SYStem.BdmClock 3.0MHz
+SYStem.CPU 55xx
+SYStem.DETECT CPU
+
+SyStem.Option.SLOWRESET ON
+SYStem.MultiCore.CORE 1.
+SYStem.CONFIG.CORE 1. 1. 
+SYStem.CONFIG.SLAVE OFF
+SYStem.Option.WATCHDOG OFF
+SYStem.OPTION DUALPORT ON
+
+System.Option LPMDEBUG ACTIVE
+;restart the CPU with debug mode enable
+SYSTem.Up
+
+Map.BOnchip 0x00F90000--0x0127FFFF
+
+;restart the CPU with debug mode enable
+SYSTem.Up
+;load program (if FLASH selected than load only debug symbols)
+Data.Load.Elf &elfname.elf  /GLOBTYPES /NOCODE
+
+ENDDO
+

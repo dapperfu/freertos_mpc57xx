@@ -1,0 +1,1121 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+                              bin/cbootstrap.o (memcpy)
+c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+                              bin/cbootstrap.o (memset)
+c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+                              c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o) (__fill_mem)
+c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+                              c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o) (_restgpr_31_x)
+
+Allocating common symbols
+Common symbol       size              file
+
+TaskTick            0x40              bin/main.o
+OSInterruptsHandlerTable
+                    0xbf8             bin/hw_platform.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 bin/crt0.o
+ .data          0x00000000        0x0 bin/crt0.o
+ .bss           0x00000000        0x0 bin/crt0.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/cbootstrap.o
+ .text          0x00000000        0x0 bin/cbootstrap.o
+ .data          0x00000000        0x0 bin/cbootstrap.o
+ .bss           0x00000000        0x0 bin/cbootstrap.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .group         0x00000000        0x8 bin/main.o
+ .text          0x00000000        0x0 bin/main.o
+ .data          0x00000000        0x0 bin/main.o
+ .bss           0x00000000        0x0 bin/main.o
+ .sdata.test_init_small_data
+                0x00000000        0x4 bin/main.o
+ .data.test_init_data
+                0x00000000     0x1000 bin/main.o
+ .debug_macro   0x00000000      0x628 bin/main.o
+ .debug_macro   0x00000000       0x58 bin/main.o
+ .debug_macro   0x00000000       0x22 bin/main.o
+ .debug_macro   0x00000000       0x3b bin/main.o
+ .debug_macro   0x00000000       0x9c bin/main.o
+ .debug_macro   0x00000000      0x166 bin/main.o
+ .debug_macro   0x00000000       0x4a bin/main.o
+ .debug_macro   0x00000000       0x52 bin/main.o
+ .debug_macro   0x00000000       0x16 bin/main.o
+ .debug_macro   0x00000000       0x43 bin/main.o
+ .debug_macro   0x00000000      0x179 bin/main.o
+ .debug_macro   0x00000000       0x35 bin/main.o
+ .debug_macro   0x00000000      0x29d bin/main.o
+ .text          0x00000000        0x0 bin/handlers.o
+ .data          0x00000000        0x0 bin/handlers.o
+ .bss           0x00000000        0x0 bin/handlers.o
+ .group         0x00000000        0x8 bin/hw_flashrchw.o
+ .text          0x00000000        0x0 bin/hw_flashrchw.o
+ .data          0x00000000        0x0 bin/hw_flashrchw.o
+ .bss           0x00000000        0x0 bin/hw_flashrchw.o
+ .debug_macro   0x00000000      0x628 bin/hw_flashrchw.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .group         0x00000000        0x8 bin/hw_platform.o
+ .text          0x00000000        0x0 bin/hw_platform.o
+ .data          0x00000000        0x0 bin/hw_platform.o
+ .bss           0x00000000        0x0 bin/hw_platform.o
+ .text.OS_DisableINTCInput
+                0x00000000       0x3a bin/hw_platform.o
+ .debug_macro   0x00000000      0x628 bin/hw_platform.o
+ .debug_macro   0x00000000       0x22 bin/hw_platform.o
+ .debug_macro   0x00000000       0x1c bin/hw_platform.o
+ .debug_macro   0x00000000      0x1f7 bin/hw_platform.o
+ .debug_macro   0x00000000       0x34 bin/hw_platform.o
+ .debug_macro   0x00000000       0x2e bin/hw_platform.o
+ .debug_macro   0x00000000       0x58 bin/hw_platform.o
+ .debug_macro   0x00000000       0x6a bin/hw_platform.o
+ .debug_macro   0x00000000       0x6a bin/hw_platform.o
+ .debug_macro   0x00000000       0x1c bin/hw_platform.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/tasks.o
+ .text          0x00000000        0x0 ../../Source/tasks.o
+ .data          0x00000000        0x0 ../../Source/tasks.o
+ .bss           0x00000000        0x0 ../../Source/tasks.o
+ .text.vTaskSuspend
+                0x00000000      0x272 ../../Source/tasks.o
+ .text.vTaskResume
+                0x00000000      0x12a ../../Source/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000       0xd2 ../../Source/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x18 ../../Source/tasks.o
+ .text.xTaskGetTickCount
+                0x00000000        0xa ../../Source/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000        0xa ../../Source/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0xa ../../Source/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000       0xc0 ../../Source/tasks.o
+ .text.vTaskPlaceOnEventList
+                0x00000000       0xb4 ../../Source/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0xbe ../../Source/tasks.o
+ .text.xTaskRemoveFromEventList
+                0x00000000       0xac ../../Source/tasks.o
+ .text.xTaskRemoveFromUnorderedEventList
+                0x00000000       0x7e ../../Source/tasks.o
+ .text.vTaskSetTimeOutState
+                0x00000000       0x1a ../../Source/tasks.o
+ .text.xTaskCheckForTimeOut
+                0x00000000       0xe8 ../../Source/tasks.o
+ .text.vTaskMissedYield
+                0x00000000        0xe ../../Source/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000        0xa ../../Source/tasks.o
+ .text.vTaskPriorityInherit
+                0x00000000       0xbe ../../Source/tasks.o
+ .text.xTaskPriorityDisinherit
+                0x00000000       0x94 ../../Source/tasks.o
+ .text.vTaskEnterCritical
+                0x00000000       0x32 ../../Source/tasks.o
+ .text.vTaskExitCritical
+                0x00000000       0x4e ../../Source/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x22 ../../Source/tasks.o
+ .text.pvTaskIncrementMutexHeldCount
+                0x00000000       0x26 ../../Source/tasks.o
+ .text.ulTaskNotifyTake
+                0x00000000      0x1f6 ../../Source/tasks.o
+ .text.xTaskNotifyWait
+                0x00000000      0x218 ../../Source/tasks.o
+ .text.xTaskGenericNotify
+                0x00000000      0x174 ../../Source/tasks.o
+ .rodata.xTaskGenericNotify
+                0x00000000       0x14 ../../Source/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x00000000      0x136 ../../Source/tasks.o
+ .rodata.xTaskGenericNotifyFromISR
+                0x00000000       0x14 ../../Source/tasks.o
+ .text.vTaskNotifyGiveFromISR
+                0x00000000       0xc8 ../../Source/tasks.o
+ .text.xTaskNotifyStateClear
+                0x00000000       0xa6 ../../Source/tasks.o
+ .debug_macro   0x00000000      0x628 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x58 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x22 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x3b ../../Source/tasks.o
+ .debug_macro   0x00000000       0x9c ../../Source/tasks.o
+ .debug_macro   0x00000000       0x4a ../../Source/tasks.o
+ .debug_macro   0x00000000       0x52 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x16 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x43 ../../Source/tasks.o
+ .debug_macro   0x00000000      0x179 ../../Source/tasks.o
+ .debug_macro   0x00000000      0x29d ../../Source/tasks.o
+ .debug_macro   0x00000000       0x16 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x29 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x16 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x35 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x1c ../../Source/tasks.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/tasks.o
+ .debug_macro   0x00000000       0xc4 ../../Source/tasks.o
+ .debug_macro   0x00000000      0x15d ../../Source/tasks.o
+ .debug_macro   0x00000000       0x8e ../../Source/tasks.o
+ .debug_macro   0x00000000       0x10 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x1f ../../Source/tasks.o
+ .debug_macro   0x00000000      0x376 ../../Source/tasks.o
+ .debug_macro   0x00000000       0xc0 ../../Source/tasks.o
+ .debug_macro   0x00000000       0x9a ../../Source/tasks.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/queue.o
+ .text          0x00000000        0x0 ../../Source/queue.o
+ .data          0x00000000        0x0 ../../Source/queue.o
+ .bss           0x00000000        0x0 ../../Source/queue.o
+ .text.xQueueGenericReset
+                0x00000000       0xaa ../../Source/queue.o
+ .text.xQueueGenericCreate
+                0x00000000       0xae ../../Source/queue.o
+ .text.xQueueGenericSend
+                0x00000000      0x55e ../../Source/queue.o
+ .text.xQueueCreateMutex
+                0x00000000       0x70 ../../Source/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000000      0x194 ../../Source/queue.o
+ .text.xQueueGiveFromISR
+                0x00000000       0x92 ../../Source/queue.o
+ .text.xQueueGenericReceive
+                0x00000000      0x4c0 ../../Source/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000       0xbc ../../Source/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0x6a ../../Source/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x22 ../../Source/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x2e ../../Source/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x4 ../../Source/queue.o
+ .text.vQueueDelete
+                0x00000000        0x4 ../../Source/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0xa ../../Source/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x12 ../../Source/queue.o
+ .debug_macro   0x00000000      0x628 ../../Source/queue.o
+ .debug_macro   0x00000000       0x58 ../../Source/queue.o
+ .debug_macro   0x00000000       0x22 ../../Source/queue.o
+ .debug_macro   0x00000000       0x3b ../../Source/queue.o
+ .debug_macro   0x00000000       0x9c ../../Source/queue.o
+ .debug_macro   0x00000000       0x16 ../../Source/queue.o
+ .debug_macro   0x00000000      0x10e ../../Source/queue.o
+ .debug_macro   0x00000000       0x7f ../../Source/queue.o
+ .debug_macro   0x00000000       0x4a ../../Source/queue.o
+ .debug_macro   0x00000000       0x52 ../../Source/queue.o
+ .debug_macro   0x00000000       0x16 ../../Source/queue.o
+ .debug_macro   0x00000000       0x43 ../../Source/queue.o
+ .debug_macro   0x00000000      0x179 ../../Source/queue.o
+ .debug_macro   0x00000000      0x29d ../../Source/queue.o
+ .debug_macro   0x00000000       0x16 ../../Source/queue.o
+ .debug_macro   0x00000000       0x29 ../../Source/queue.o
+ .debug_macro   0x00000000       0x16 ../../Source/queue.o
+ .debug_macro   0x00000000       0x35 ../../Source/queue.o
+ .debug_macro   0x00000000       0x1c ../../Source/queue.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/queue.o
+ .debug_macro   0x00000000       0xc4 ../../Source/queue.o
+ .debug_macro   0x00000000      0x15d ../../Source/queue.o
+ .debug_macro   0x00000000       0x8e ../../Source/queue.o
+ .debug_macro   0x00000000       0x10 ../../Source/queue.o
+ .debug_macro   0x00000000       0x1f ../../Source/queue.o
+ .debug_macro   0x00000000      0x376 ../../Source/queue.o
+ .debug_macro   0x00000000       0xc0 ../../Source/queue.o
+ .debug_macro   0x00000000       0x9a ../../Source/queue.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/list.o
+ .text          0x00000000        0x0 ../../Source/list.o
+ .data          0x00000000        0x0 ../../Source/list.o
+ .bss           0x00000000        0x0 ../../Source/list.o
+ .debug_macro   0x00000000      0x628 ../../Source/list.o
+ .debug_macro   0x00000000       0x58 ../../Source/list.o
+ .debug_macro   0x00000000       0x22 ../../Source/list.o
+ .debug_macro   0x00000000       0x3b ../../Source/list.o
+ .debug_macro   0x00000000       0x9c ../../Source/list.o
+ .debug_macro   0x00000000       0x16 ../../Source/list.o
+ .debug_macro   0x00000000      0x10e ../../Source/list.o
+ .debug_macro   0x00000000       0x7f ../../Source/list.o
+ .debug_macro   0x00000000       0x4a ../../Source/list.o
+ .debug_macro   0x00000000       0x52 ../../Source/list.o
+ .debug_macro   0x00000000       0x16 ../../Source/list.o
+ .debug_macro   0x00000000       0x43 ../../Source/list.o
+ .debug_macro   0x00000000      0x179 ../../Source/list.o
+ .debug_macro   0x00000000      0x29d ../../Source/list.o
+ .debug_macro   0x00000000       0x16 ../../Source/list.o
+ .debug_macro   0x00000000       0x29 ../../Source/list.o
+ .debug_macro   0x00000000       0x1c ../../Source/list.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/list.o
+ .debug_macro   0x00000000       0xc4 ../../Source/list.o
+ .debug_macro   0x00000000      0x15d ../../Source/list.o
+ .debug_macro   0x00000000       0x8e ../../Source/list.o
+ .debug_macro   0x00000000       0x10 ../../Source/list.o
+ .debug_macro   0x00000000       0x1f ../../Source/list.o
+ .debug_macro   0x00000000      0x376 ../../Source/list.o
+ .debug_macro   0x00000000       0xc0 ../../Source/list.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/croutine.o
+ .text          0x00000000        0x0 ../../Source/croutine.o
+ .data          0x00000000        0x0 ../../Source/croutine.o
+ .bss           0x00000000        0x0 ../../Source/croutine.o
+ .debug_info    0x00000000       0x76 ../../Source/croutine.o
+ .debug_abbrev  0x00000000       0x29 ../../Source/croutine.o
+ .debug_aranges
+                0x00000000       0x18 ../../Source/croutine.o
+ .debug_macro   0x00000000       0xcc ../../Source/croutine.o
+ .debug_macro   0x00000000      0x628 ../../Source/croutine.o
+ .debug_macro   0x00000000      0x166 ../../Source/croutine.o
+ .debug_macro   0x00000000       0x22 ../../Source/croutine.o
+ .debug_macro   0x00000000       0x44 ../../Source/croutine.o
+ .debug_macro   0x00000000       0x1c ../../Source/croutine.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/croutine.o
+ .debug_macro   0x00000000       0xc4 ../../Source/croutine.o
+ .debug_macro   0x00000000      0x15d ../../Source/croutine.o
+ .debug_macro   0x00000000       0x8e ../../Source/croutine.o
+ .debug_macro   0x00000000       0x10 ../../Source/croutine.o
+ .debug_macro   0x00000000       0x1f ../../Source/croutine.o
+ .debug_macro   0x00000000      0x376 ../../Source/croutine.o
+ .debug_macro   0x00000000       0xc0 ../../Source/croutine.o
+ .debug_macro   0x00000000       0x9a ../../Source/croutine.o
+ .debug_macro   0x00000000       0x43 ../../Source/croutine.o
+ .debug_line    0x00000000      0x2c0 ../../Source/croutine.o
+ .debug_str     0x00000000     0x6296 ../../Source/croutine.o
+ .comment       0x00000000       0x56 ../../Source/croutine.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/MemMang/heap_1.o
+ .text          0x00000000        0x0 ../../Source/portable/MemMang/heap_1.o
+ .data          0x00000000        0x0 ../../Source/portable/MemMang/heap_1.o
+ .bss           0x00000000        0x0 ../../Source/portable/MemMang/heap_1.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0xe ../../Source/portable/MemMang/heap_1.o
+ .text.xPortGetFreeHeapSize
+                0x00000000       0x12 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x628 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x58 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x22 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x3b ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x9c ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x10e ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x7f ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x4a ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x52 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x43 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x179 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x29d ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x16 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x29 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x1c ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0xc4 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x15d ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x8e ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x10 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x1f ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000      0x376 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0xc0 ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00000000       0x9a ../../Source/portable/MemMang/heap_1.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .group         0x00000000        0x8 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .text          0x00000000        0x0 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .data          0x00000000        0x0 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .bss           0x00000000        0x0 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .text.vPortEndScheduler
+                0x00000000        0x6 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .text.prvPortTimerSetup
+                0x00000000       0x52 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000      0x628 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000      0x166 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x22 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x44 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x1c ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000      0x1f7 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0xc4 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000      0x15d ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x8e ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x10 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x1f ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000      0x376 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0xc0 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x9a ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x1c ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x34 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x2e ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x58 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x6a ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x6a ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_macro   0x00000000       0x1c ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .data          0x00000000        0x0 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .bss           0x00000000        0x0 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .text          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .data          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .text          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .data          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .bss           0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .text          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .data          0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .bss           0x00000000        0x0 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .data          0x00000000        0x0 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+ .bss           0x00000000        0x0 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+ .eh_frame      0x00000000       0x7c c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+INTERNAL_FLASH   0x00fc0000         0x00008000         axr
+INTERNAL_RAM     0x40000000         0x0000c000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD bin/crt0.o
+LOAD bin/cbootstrap.o
+LOAD bin/main.o
+LOAD bin/handlers.o
+LOAD bin/hw_flashrchw.o
+LOAD bin/hw_platform.o
+LOAD ../../Source/tasks.o
+LOAD ../../Source/queue.o
+LOAD ../../Source/list.o
+LOAD ../../Source/croutine.o
+LOAD ../../Source/portable/MemMang/heap_1.o
+LOAD ../../Source/portable/GCC/PowerPC_Z4/port.o
+LOAD ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+LOAD c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a
+LOAD c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a
+LOAD c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a
+                0x00000400                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0x400
+
+.rchwdata       0x00fc0000       0x18
+ *(.rchwdata)
+ .rchwdata      0x00fc0000       0x18 bin/hw_flashrchw.o
+                0x00fc0000                RCHW1
+                0x00fc0004                RCHW2
+                0x00fc0008                RCHW3
+                0x00fc000c                RCHW4
+                0x00fc0010                RCHW5
+                0x00fc0014                RCHW6
+
+.vectors        0x00fc0100      0x104
+                0x00fc0100                __IVPR_ADDR = .
+                0x00fc0100                __vectors_start = .
+ *(.vectors)
+ .vectors       0x00fc0100      0x104 bin/handlers.o
+                0x00fc0204                __vectors_end = .
+
+.startup        0x00fc0210      0x194
+ *(.startup)
+ .startup       0x00fc0210      0x138 bin/crt0.o
+                0x00fc0210                __start
+                0x00fc02de                prep_flash_startup
+ .startup       0x00fc0348       0x5c bin/cbootstrap.o
+                0x00fc0348                CBootstrap
+
+.text           0x00fc03b0     0x13ca
+ *(.text)
+ .text          0x00fc03b0       0xe6 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+                0x00fc03b0                vPortStartFirstTask
+                0x00fc03d0                __external_interrupt_handler
+                0x00fc0450                vPortYield
+ .text          0x00fc0496       0x52 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+                0x00fc0496                _restgpr_14_x
+                0x00fc049a                _restgpr_15_x
+                0x00fc049e                _restgpr_16_x
+                0x00fc04a2                _restgpr_17_x
+                0x00fc04a6                _restgpr_18_x
+                0x00fc04aa                _restgpr_19_x
+                0x00fc04ae                _restgpr_20_x
+                0x00fc04b2                _restgpr_21_x
+                0x00fc04b6                _restgpr_22_x
+                0x00fc04ba                _restgpr_23_x
+                0x00fc04be                _restgpr_24_x
+                0x00fc04c2                _restgpr_25_x
+                0x00fc04c6                _restgpr_26_x
+                0x00fc04ca                _restgpr_27_x
+                0x00fc04ce                _restgpr_28_x
+                0x00fc04d2                _restgpr_29_x
+                0x00fc04d6                _restgpr_30_x
+                0x00fc04da                _restgpr_31_x
+ *(.text.*)
+ .text.vLEDTask
+                0x00fc04e8       0x56 bin/main.o
+                0x00fc04e8                vLEDTask
+ .text.vApplicationTickHook
+                0x00fc053e       0x12 bin/main.o
+                0x00fc053e                vApplicationTickHook
+ .text.startup.main
+                0x00fc0550      0x198 bin/main.o
+                0x00fc0550                main
+ .text.OS_UnusedInterruptHandler
+                0x00fc06e8        0x4 bin/hw_platform.o
+                0x00fc06e8                OS_UnusedInterruptHandler
+ .text.OS_InstallInterruptHandler
+                0x00fc06ec       0x4e bin/hw_platform.o
+                0x00fc06ec                OS_InstallInterruptHandler
+ .text.OS_PlatformInit
+                0x00fc073a       0x7e bin/hw_platform.o
+                0x00fc073a                OS_PlatformInit
+ .text.prvIdleTask
+                0x00fc07b8       0x1c ../../Source/tasks.o
+ .text.xTaskGenericCreate
+                0x00fc07d4      0x374 ../../Source/tasks.o
+                0x00fc07d4                xTaskGenericCreate
+ .text.vTaskStartScheduler
+                0x00fc0b48      0x292 ../../Source/tasks.o
+                0x00fc0b48                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x00fc0dda       0x12 ../../Source/tasks.o
+                0x00fc0dda                vTaskSuspendAll
+ .text.xTaskIncrementTick
+                0x00fc0dec      0x1d4 ../../Source/tasks.o
+                0x00fc0dec                xTaskIncrementTick
+ .text.xTaskResumeAll
+                0x00fc0fc0      0x1b0 ../../Source/tasks.o
+                0x00fc0fc0                xTaskResumeAll
+ .text.vTaskDelay
+                0x00fc1170       0xb2 ../../Source/tasks.o
+                0x00fc1170                vTaskDelay
+ .text.vTaskSwitchContext
+                0x00fc1222       0xac ../../Source/tasks.o
+                0x00fc1222                vTaskSwitchContext
+ .text.vListInitialise
+                0x00fc12ce       0x22 ../../Source/list.o
+                0x00fc12ce                vListInitialise
+ .text.vListInitialiseItem
+                0x00fc12f0        0xa ../../Source/list.o
+                0x00fc12f0                vListInitialiseItem
+ .text.vListInsertEnd
+                0x00fc12fa       0x2c ../../Source/list.o
+                0x00fc12fa                vListInsertEnd
+ .text.vListInsert
+                0x00fc1326       0x6c ../../Source/list.o
+                0x00fc1326                vListInsert
+ .text.uxListRemove
+                0x00fc1392       0x5c ../../Source/list.o
+                0x00fc1392                uxListRemove
+ .text.pvPortMalloc
+                0x00fc13ee       0x92 ../../Source/portable/MemMang/heap_1.o
+                0x00fc13ee                pvPortMalloc
+ .text.vPortFree
+                0x00fc1480        0x2 ../../Source/portable/MemMang/heap_1.o
+                0x00fc1480                vPortFree
+ .text.vPortTickISR
+                0x00fc1482       0x36 ../../Source/portable/GCC/PowerPC_Z4/port.o
+                0x00fc1482                vPortTickISR
+ .text.pxPortInitialiseStack
+                0x00fc14b8      0x136 ../../Source/portable/GCC/PowerPC_Z4/port.o
+                0x00fc14b8                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x00fc15ee       0x58 ../../Source/portable/GCC/PowerPC_Z4/port.o
+                0x00fc15ee                xPortStartScheduler
+ .text.memcpy   0x00fc1646       0x42 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+                0x00fc1646                memcpy
+ .text.memset   0x00fc1688       0x1a c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+                0x00fc1688                memset
+ .text.__fill_mem
+                0x00fc16a2       0xd8 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+                0x00fc16a2                __fill_mem
+ *(.gnu.linkonce.t.*)
+
+.glink          0x00fc177a        0x0
+ .glink         0x00fc177a        0x0 bin/crt0.o
+
+.rodata         0x00fc177c      0x306
+                0x00fc177c                __rodata_start = .
+                0x00fc177c                __INIT_DATA_START__ = .
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.str1.4
+                0x00fc177c        0x8 bin/main.o
+ .rodata.OsINTCInputs
+                0x00fc1784      0x2fe bin/hw_platform.o
+                0x00fc1784                OsINTCInputs
+ *(.gnu.linkonce.r.*)
+                0x00fc1a82                __rodata_end = .
+
+.eh_frame       0x00fc1a84        0x0
+ .eh_frame      0x00fc1a84        0x0 bin/crt0.o
+
+.sdata2         0x00fc1a82        0x0
+                0x00fc1a82                __sdata2_start = .
+ *(.sdata2)
+ .sdata2        0x00fc1a82        0x0 bin/crt0.o
+ *(.sdata2.*)
+ *(.gnu.linkonce.s2.*)
+                0x00fc1a82                __sdata2_end = .
+                0x00fc1a82                __data_flash_start__ = .
+
+.rela.dyn       0x00fc1a84        0x0
+ .rela.iplt     0x00fc1a84        0x0 bin/crt0.o
+ .rela.startup  0x00fc1a84        0x0 bin/crt0.o
+ .rela.text.vLEDTask
+                0x00fc1a84        0x0 bin/crt0.o
+ .rela.text.OS_InstallInterruptHandler
+                0x00fc1a84        0x0 bin/crt0.o
+ .rela.text.OS_PlatformInit
+                0x00fc1a84        0x0 bin/crt0.o
+
+.data           0x40000000        0x0 load address 0x00fc1a82
+                0x40000000                __data_start__ = .
+ *(.data)
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+                0x40000000                __data_end__ = .
+
+.sdata          0x40000000        0x0 load address 0x00fc1a82
+                0x40000000                __sdata_start__ = .
+ *(.sdata)
+ .sdata         0x40000000        0x0 bin/crt0.o
+ *(.sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x40000000                __sdata_end__ = .
+
+.sbss           0x40000000        0x8 load address 0x00fc1a82
+                0x40000000                __sbss_start__ = .
+ *(.sbss)
+ *(.sbss.*)
+ .sbss.ui32_ms_cnt
+                0x40000000        0x4 bin/main.o
+                0x40000000                ui32_ms_cnt
+ .sbss.pxCurrentTCB
+                0x40000004        0x4 ../../Source/tasks.o
+                0x40000004                pxCurrentTCB
+ *(.gnu.linkonce.sb.*)
+ *(.scommon)
+                0x40000008                __sbss_end__ = .
+
+.bss            0x40000008     0x2524 load address 0x00fc1a82
+                0x40000008                __bss_start__ = .
+ *(.bss)
+ *(.bss.*)
+ .bss.xNextTaskUnblockTime
+                0x40000008        0x4 ../../Source/tasks.o
+ .bss.xNumOfOverflows
+                0x4000000c        0x4 ../../Source/tasks.o
+ .bss.pxDelayedTaskList
+                0x40000010        0x4 ../../Source/tasks.o
+ .bss.xDelayedTaskList1
+                0x40000014       0x14 ../../Source/tasks.o
+ .bss.xSuspendedTaskList
+                0x40000028       0x14 ../../Source/tasks.o
+ .bss.uxPendedTicks
+                0x4000003c        0x4 ../../Source/tasks.o
+ .bss.pxReadyTasksLists
+                0x40000040       0x64 ../../Source/tasks.o
+ .bss.uxSchedulerSuspended
+                0x400000a4        0x4 ../../Source/tasks.o
+ .bss.xPendingReadyList
+                0x400000a8       0x14 ../../Source/tasks.o
+ .bss.xTickCount
+                0x400000bc        0x4 ../../Source/tasks.o
+ .bss.pxOverflowDelayedTaskList
+                0x400000c0        0x4 ../../Source/tasks.o
+ .bss.uxTaskNumber
+                0x400000c4        0x4 ../../Source/tasks.o
+ .bss.xSchedulerRunning
+                0x400000c8        0x4 ../../Source/tasks.o
+ .bss.xDelayedTaskList2
+                0x400000cc       0x14 ../../Source/tasks.o
+ .bss.uxCurrentNumberOfTasks
+                0x400000e0        0x4 ../../Source/tasks.o
+ .bss.uxTopReadyPriority
+                0x400000e4        0x4 ../../Source/tasks.o
+ .bss.xYieldPending
+                0x400000e8        0x4 ../../Source/tasks.o
+ .bss.xNextFreeByte
+                0x400000ec        0x4 ../../Source/portable/MemMang/heap_1.o
+ .bss.ucHeap    0x400000f0     0x1800 ../../Source/portable/MemMang/heap_1.o
+ .bss.pucAlignedHeap.3164
+                0x400018f0        0x4 ../../Source/portable/MemMang/heap_1.o
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x400018f4       0x40 bin/main.o
+                0x400018f4                TaskTick
+ COMMON         0x40001934      0xbf8 bin/hw_platform.o
+                0x40001934                OSInterruptsHandlerTable
+                0x4000252c                . = ALIGN (0x4)
+                0x4000252c                __bss_end__ = .
+
+.iplt           0x40002530        0x0 load address 0x00fc1a82
+ .iplt          0x40002530        0x0 bin/crt0.o
+
+.stack          0x4000252c      0x404 load address 0x00fc1a82
+                0x4000252c                _stack_end = .
+                0x4000252c                __STACK_END__ = .
+                0x4000292c                . = (. + _STACK_SIZE)
+ *fill*         0x4000252c      0x400 
+                0x40002930                . = ALIGN (0x10)
+ *fill*         0x4000292c        0x4 
+                0x40002930                __SP_INIT__ = .
+                0x40002930                __stack = .
+OUTPUT(bin/demo_flash.elf elf32-powerpc)
+
+.PPC.EMB.apuinfo
+                0x00000000       0x1c
+ .PPC.EMB.apuinfo
+                0x00000000       0x18 bin/crt0.o
+ .PPC.EMB.apuinfo
+                0x00000018       0x18 bin/cbootstrap.o
+ .PPC.EMB.apuinfo
+                0x00000030       0x18 bin/main.o
+ .PPC.EMB.apuinfo
+                0x00000048       0x18 bin/handlers.o
+ .PPC.EMB.apuinfo
+                0x00000060       0x18 bin/hw_platform.o
+ .PPC.EMB.apuinfo
+                0x00000078       0x1c ../../Source/tasks.o
+ .PPC.EMB.apuinfo
+                0x00000094       0x18 ../../Source/queue.o
+ .PPC.EMB.apuinfo
+                0x000000ac       0x18 ../../Source/list.o
+ .PPC.EMB.apuinfo
+                0x000000c4       0x18 ../../Source/portable/MemMang/heap_1.o
+ .PPC.EMB.apuinfo
+                0x000000dc       0x18 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .PPC.EMB.apuinfo
+                0x000000f4       0x18 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .PPC.EMB.apuinfo
+                0x0000010c       0x18 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .PPC.EMB.apuinfo
+                0x00000124       0x18 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .PPC.EMB.apuinfo
+                0x0000013c       0x18 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .PPC.EMB.apuinfo
+                0x00000154       0x18 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+.comment        0x00000000       0xa9
+ .comment       0x00000000       0x55 bin/cbootstrap.o
+                                 0x56 (size before relaxing)
+ .comment       0x00000055       0x56 bin/main.o
+ .comment       0x00000055       0x56 bin/hw_flashrchw.o
+ .comment       0x00000055       0x56 bin/hw_platform.o
+ .comment       0x00000055       0x56 ../../Source/tasks.o
+ .comment       0x00000055       0x56 ../../Source/queue.o
+ .comment       0x00000055       0x56 ../../Source/list.o
+ .comment       0x00000055       0x56 ../../Source/portable/MemMang/heap_1.o
+ .comment       0x00000055       0x56 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .comment       0x00000055       0x54 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+                                 0x55 (size before relaxing)
+ .comment       0x000000a9       0x55 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .comment       0x000000a9       0x55 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+
+.debug_line     0x00000000     0x3041
+ .debug_line    0x00000000       0x98 bin/crt0.o
+ .debug_line    0x00000098      0x25c bin/cbootstrap.o
+ .debug_line    0x000002f4      0x4ac bin/main.o
+ .debug_line    0x000007a0       0x5f bin/handlers.o
+ .debug_line    0x000007ff       0x36 bin/hw_flashrchw.o
+ .debug_line    0x00000835      0x2c3 bin/hw_platform.o
+ .debug_line    0x00000af8      0xe21 ../../Source/tasks.o
+ .debug_line    0x00001919      0x8ce ../../Source/queue.o
+ .debug_line    0x000021e7      0x3be ../../Source/list.o
+ .debug_line    0x000025a5      0x3b5 ../../Source/portable/MemMang/heap_1.o
+ .debug_line    0x0000295a      0x3da ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_line    0x00002d34       0x79 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .debug_line    0x00002dad       0x94 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_line    0x00002e41       0x9e c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_line    0x00002edf       0xe4 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .debug_line    0x00002fc3       0x7e c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+.debug_info     0x00000000     0x45db
+ .debug_info    0x00000000       0x91 bin/crt0.o
+ .debug_info    0x00000091      0x1b1 bin/cbootstrap.o
+ .debug_info    0x00000242      0x3dd bin/main.o
+ .debug_info    0x0000061f       0x95 bin/handlers.o
+ .debug_info    0x000006b4       0x94 bin/hw_flashrchw.o
+ .debug_info    0x00000748      0x1b7 bin/hw_platform.o
+ .debug_info    0x000008ff     0x1d91 ../../Source/tasks.o
+ .debug_info    0x00002690     0x13a4 ../../Source/queue.o
+ .debug_info    0x00003a34      0x29c ../../Source/list.o
+ .debug_info    0x00003cd0      0x1bb ../../Source/portable/MemMang/heap_1.o
+ .debug_info    0x00003e8b      0x24e ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_info    0x000040d9       0xb2 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .debug_info    0x0000418b      0x12e c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_info    0x000042b9      0x125 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_info    0x000043de      0x13b c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .debug_info    0x00004519       0xc2 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+.debug_abbrev   0x00000000     0x100f
+ .debug_abbrev  0x00000000       0x14 bin/crt0.o
+ .debug_abbrev  0x00000014       0xbb bin/cbootstrap.o
+ .debug_abbrev  0x000000cf      0x197 bin/main.o
+ .debug_abbrev  0x00000266       0x14 bin/handlers.o
+ .debug_abbrev  0x0000027a       0x36 bin/hw_flashrchw.o
+ .debug_abbrev  0x000002b0      0x12d bin/hw_platform.o
+ .debug_abbrev  0x000003dd      0x401 ../../Source/tasks.o
+ .debug_abbrev  0x000007de      0x2a8 ../../Source/queue.o
+ .debug_abbrev  0x00000a86       0xdf ../../Source/list.o
+ .debug_abbrev  0x00000b65      0x12f ../../Source/portable/MemMang/heap_1.o
+ .debug_abbrev  0x00000c94      0x197 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_abbrev  0x00000e2b       0x14 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .debug_abbrev  0x00000e3f       0xa5 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_abbrev  0x00000ee4       0x98 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_abbrev  0x00000f7c       0x7f c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .debug_abbrev  0x00000ffb       0x14 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+.debug_aranges  0x00000000      0x400
+ .debug_aranges
+                0x00000000       0x20 bin/crt0.o
+ .debug_aranges
+                0x00000020       0x20 bin/cbootstrap.o
+ .debug_aranges
+                0x00000040       0x30 bin/main.o
+ .debug_aranges
+                0x00000070       0x20 bin/handlers.o
+ .debug_aranges
+                0x00000090       0x18 bin/hw_flashrchw.o
+ .debug_aranges
+                0x000000a8       0x38 bin/hw_platform.o
+ .debug_aranges
+                0x000000e0      0x138 ../../Source/tasks.o
+ .debug_aranges
+                0x00000218       0x90 ../../Source/queue.o
+ .debug_aranges
+                0x000002a8       0x40 ../../Source/list.o
+ .debug_aranges
+                0x000002e8       0x38 ../../Source/portable/MemMang/heap_1.o
+ .debug_aranges
+                0x00000320       0x40 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_aranges
+                0x00000360       0x20 ../../Source/portable/GCC/PowerPC_Z4/portasm.o
+ .debug_aranges
+                0x00000380       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_aranges
+                0x000003a0       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_aranges
+                0x000003c0       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+ .debug_aranges
+                0x000003e0       0x20 c:/tools/s32_power_v1.0/cross_tools/powerpc-eabivle-4_9/bin/../lib/gcc/powerpc-eabivle/4.9.2/e200z4\libgcc.a(e200crtresxgpr.o)
+
+.debug_ranges   0x00000000      0x870
+ .debug_ranges  0x00000000       0x10 bin/cbootstrap.o
+ .debug_ranges  0x00000010       0x20 bin/main.o
+ .debug_ranges  0x00000030       0x48 bin/hw_platform.o
+ .debug_ranges  0x00000078      0x598 ../../Source/tasks.o
+ .debug_ranges  0x00000610      0x190 ../../Source/queue.o
+ .debug_ranges  0x000007a0       0x30 ../../Source/list.o
+ .debug_ranges  0x000007d0       0x28 ../../Source/portable/MemMang/heap_1.o
+ .debug_ranges  0x000007f8       0x48 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_ranges  0x00000840       0x10 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_ranges  0x00000850       0x10 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_ranges  0x00000860       0x10 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+
+.debug_macro    0x00000000     0x2def
+ .debug_macro   0x00000000       0xcc bin/cbootstrap.o
+ .debug_macro   0x000000cc      0x628 bin/cbootstrap.o
+ .debug_macro   0x000006f4       0x58 bin/cbootstrap.o
+ .debug_macro   0x0000074c       0x22 bin/cbootstrap.o
+ .debug_macro   0x0000076e       0x3b bin/cbootstrap.o
+ .debug_macro   0x000007a9       0x9c bin/cbootstrap.o
+ .debug_macro   0x00000845      0x166 bin/cbootstrap.o
+ .debug_macro   0x000009ab       0x4a bin/cbootstrap.o
+ .debug_macro   0x000009f5       0x52 bin/cbootstrap.o
+ .debug_macro   0x00000a47       0x16 bin/cbootstrap.o
+ .debug_macro   0x00000a5d       0x43 bin/cbootstrap.o
+ .debug_macro   0x00000aa0      0x179 bin/cbootstrap.o
+ .debug_macro   0x00000c19      0x29d bin/cbootstrap.o
+ .debug_macro   0x00000eb6       0x10 bin/cbootstrap.o
+ .debug_macro   0x00000ec6       0x35 bin/cbootstrap.o
+ .debug_macro   0x00000efb      0x25b bin/main.o
+ .debug_macro   0x00001156       0x10 bin/main.o
+ .debug_macro   0x00001166       0x16 bin/main.o
+ .debug_macro   0x0000117c       0x10 bin/main.o
+ .debug_macro   0x0000118c       0x22 bin/main.o
+ .debug_macro   0x000011ae       0xbd bin/main.o
+ .debug_macro   0x0000126b       0x35 bin/main.o
+ .debug_macro   0x000012a0      0x121 bin/main.o
+ .debug_macro   0x000013c1       0x58 bin/main.o
+ .debug_macro   0x00001419       0x1c bin/main.o
+ .debug_macro   0x00001435       0x16 bin/main.o
+ .debug_macro   0x0000144b       0x29 bin/main.o
+ .debug_macro   0x00001474       0x1c bin/main.o
+ .debug_macro   0x00001490       0x16 bin/main.o
+ .debug_macro   0x000014a6      0x196 bin/main.o
+ .debug_macro   0x0000163c       0x16 bin/main.o
+ .debug_macro   0x00001652       0x1c bin/main.o
+ .debug_macro   0x0000166e      0x1f7 bin/main.o
+ .debug_macro   0x00001865       0xc4 bin/main.o
+ .debug_macro   0x00001929      0x15d bin/main.o
+ .debug_macro   0x00001a86       0x8e bin/main.o
+ .debug_macro   0x00001b14       0x10 bin/main.o
+ .debug_macro   0x00001b24       0x1f bin/main.o
+ .debug_macro   0x00001b43      0x376 bin/main.o
+ .debug_macro   0x00001eb9       0xc0 bin/main.o
+ .debug_macro   0x00001f79       0x9a bin/main.o
+ .debug_macro   0x00002013       0x1c bin/main.o
+ .debug_macro   0x0000202f       0x34 bin/main.o
+ .debug_macro   0x00002063       0x2e bin/main.o
+ .debug_macro   0x00002091       0x58 bin/main.o
+ .debug_macro   0x000020e9       0x6a bin/main.o
+ .debug_macro   0x00002153       0x6a bin/main.o
+ .debug_macro   0x000021bd       0x1c bin/main.o
+ .debug_macro   0x000021d9       0x2f bin/hw_flashrchw.o
+ .debug_macro   0x00002208       0xa6 bin/hw_platform.o
+ .debug_macro   0x000022ae       0x44 bin/hw_platform.o
+ .debug_macro   0x000022f2       0x16 bin/hw_platform.o
+ .debug_macro   0x00002308      0x210 ../../Source/tasks.o
+ .debug_macro   0x00002518       0x16 ../../Source/tasks.o
+ .debug_macro   0x0000252e      0x10e ../../Source/tasks.o
+ .debug_macro   0x0000263c       0x7f ../../Source/tasks.o
+ .debug_macro   0x000026bb       0x91 ../../Source/tasks.o
+ .debug_macro   0x0000274c       0x11 ../../Source/tasks.o
+ .debug_macro   0x0000275d      0x1cd ../../Source/queue.o
+ .debug_macro   0x0000292a       0xb0 ../../Source/queue.o
+ .debug_macro   0x000029da      0x15b ../../Source/list.o
+ .debug_macro   0x00002b35      0x17c ../../Source/portable/MemMang/heap_1.o
+ .debug_macro   0x00002cb1      0x13e ../../Source/portable/GCC/PowerPC_Z4/port.o
+
+.debug_str      0x00000000     0xcb6f
+ .debug_str     0x00000000     0x44a1 bin/cbootstrap.o
+                               0x45d4 (size before relaxing)
+ .debug_str     0x000044a1     0x591c bin/main.o
+                               0x9f60 (size before relaxing)
+ .debug_str     0x00009dbd       0xd3 bin/hw_flashrchw.o
+                               0x1f1e (size before relaxing)
+ .debug_str     0x00009e90       0xfc bin/hw_platform.o
+                               0x3685 (size before relaxing)
+ .debug_str     0x00009f8c     0x170f ../../Source/tasks.o
+                               0x97bd (size before relaxing)
+ .debug_str     0x0000b69b      0xf5e ../../Source/queue.o
+                               0x91cc (size before relaxing)
+ .debug_str     0x0000c5f9       0x5c ../../Source/list.o
+                               0x7955 (size before relaxing)
+ .debug_str     0x0000c655       0xd3 ../../Source/portable/MemMang/heap_1.o
+                               0x80d6 (size before relaxing)
+ .debug_str     0x0000c728      0x297 ../../Source/portable/GCC/PowerPC_Z4/port.o
+                               0x6c29 (size before relaxing)
+ .debug_str     0x0000c9bf      0x16e c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+                                0x225 (size before relaxing)
+ .debug_str     0x0000cb2d       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+                                0x238 (size before relaxing)
+ .debug_str     0x0000cb4d       0x22 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+                                0x23f (size before relaxing)
+
+.debug_frame    0x00000000      0xb1c
+ .debug_frame   0x00000000       0x30 bin/cbootstrap.o
+ .debug_frame   0x00000030       0x64 bin/main.o
+ .debug_frame   0x00000094       0x50 bin/hw_platform.o
+ .debug_frame   0x000000e4      0x578 ../../Source/tasks.o
+ .debug_frame   0x0000065c      0x2e4 ../../Source/queue.o
+ .debug_frame   0x00000940       0x60 ../../Source/list.o
+ .debug_frame   0x000009a0       0x74 ../../Source/portable/MemMang/heap_1.o
+ .debug_frame   0x00000a14       0x98 ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_frame   0x00000aac       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_frame   0x00000acc       0x30 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_frame   0x00000afc       0x20 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
+
+.debug_loc      0x00000000     0x3316
+ .debug_loc     0x00000000       0x22 bin/main.o
+ .debug_loc     0x00000022       0xc3 bin/hw_platform.o
+ .debug_loc     0x000000e5     0x16e0 ../../Source/tasks.o
+ .debug_loc     0x000017c5     0x13e9 ../../Source/queue.o
+ .debug_loc     0x00002bae       0x6b ../../Source/list.o
+ .debug_loc     0x00002c19       0x81 ../../Source/portable/MemMang/heap_1.o
+ .debug_loc     0x00002c9a      0x21d ../../Source/portable/GCC/PowerPC_Z4/port.o
+ .debug_loc     0x00002eb7      0x189 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memcpy.o)
+ .debug_loc     0x00003040       0x60 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(memset.o)
+ .debug_loc     0x000030a0      0x276 c:/tools/S32_Power_v1.0/S32DS/e200_ewl2/lib/e200z4\libc.a(__filll_mem.o)
