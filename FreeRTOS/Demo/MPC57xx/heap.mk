@@ -26,4 +26,4 @@
 OBJFILES_OS += $(OUT_ROOT)/obj/$(TEST_NAME)/heap_4.o
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Source/portable/MemMang/%.c
-	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
+	$(CC) $(CFLAGS) -c -o $@ $<

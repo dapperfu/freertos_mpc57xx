@@ -48,13 +48,13 @@ all: $(OUT_ROOT)/$(TEST_NAME).elf
 
 # Compiling
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: ./%.c
-	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 # Assembling
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: ./%.s
-	$(AS) $(ASFLAGS) -o $(shell $(CYGPATH) -m -i $@) $<
+	$(AS) $(ASFLAGS) -o $@ $<
 	
 # Linking
 $(OUT_ROOT)/$(TEST_NAME).elf: $(OBJFILES) 
-	$(LD) $(LDFLAGS) -Xlinker -o -Xlinker $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $(OBJFILES))
+	$(LD) $(LDFLAGS) -Xlinker -o -Xlinker $@ $(OBJFILES)
 

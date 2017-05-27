@@ -35,13 +35,13 @@ OBJFILES_OS  := $(OUT_ROOT)/obj/$(TEST_NAME)/tasks.o \
 include ../heap.mk
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Source/%.c
-	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Source/portable/GCC/PowerPC_Z4/%.c
-	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Source/portable/GCC/PowerPC_Z4/MPC57xx/%.c
-	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
-	
+	$(CC) $(CFLAGS) -c -o $@ $<
+
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Source/portable/GCC/PowerPC_Z4/%.s
-	$(AS) $(ASFLAGS) -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
+	$(AS) $(ASFLAGS) -o $@ $<

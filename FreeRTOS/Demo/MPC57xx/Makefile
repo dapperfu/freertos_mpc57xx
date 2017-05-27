@@ -23,11 +23,11 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-CYGPATH := cygpath.exe
-MAKE	:= make.exe
-MKDIR	:= mkdir.exe
-RM		:= rm.exe
-ECHO	:= echo.exe
+CYGPATH := 
+MAKE	:= make
+MKDIR	:= mkdir
+RM	:= rm
+ECHO	:= echo
 
 include user_paths.mk
 
@@ -36,15 +36,15 @@ CRT_DIR := $(shell pwd)
 ifndef OUT_DIR
 	OUT_DIR := $(CRT_DIR)
 else
-	OUT_DIR := $(shell $(CYGPATH) -u -i $(OUT_DIR))
+	OUT_DIR := $(OUT_DIR)
 endif
 OUT_ROOT:=$(OUT_DIR)/OUT
 
 
 
-AS		:= $(COMPILER_ROOTDIR)powerpc-eabivle-as.exe
-CC		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc.exe
-LD 		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc.exe
+AS		:= $(COMPILER_ROOTDIR)powerpc-eabivle-as
+CC		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc
+LD 		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc
 
 
 ifndef PLATFORM
