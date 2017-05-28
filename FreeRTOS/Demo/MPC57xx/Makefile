@@ -23,10 +23,20 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-MAKE	:= make
-MKDIR	:= mkdir
-RM	    := rm
-ECHO	:= echo
+# Detect which OS we are running. 
+# https://stackoverflow.com/questions/714100/os-detecting-makefile
+ifeq ($(OS),Windows_NT)
+	detected_OS := Windows
+else
+	detected_OS := $(shell uname -s)
+endif
+
+
+CYGPATH := cygpath.exe
+MAKE	:= make.exe
+MKDIR	:= mkdir.exe
+RM		:= rm.exe
+ECHO	:= echo.exe
 
 include user_paths.mk
 
@@ -35,14 +45,15 @@ CRT_DIR := $(shell pwd)
 ifndef OUT_DIR
 	OUT_DIR := $(CRT_DIR)
 else
-	OUT_DIR := $(OUT_DIR)
+	OUT_DIR := $(shell $(CYGPATH) -u -i $(OUT_DIR))
 endif
 OUT_ROOT:=$(OUT_DIR)/OUT
 
 
-AS		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-as
-CC		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc
-LD 		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc
+
+AS		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-as.exe
+CC		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc.exe
+LD 		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc.exe
 
 
 ifndef PLATFORM
@@ -64,15 +75,11 @@ export CYGPATH
 all: OUT_DIR_CREATE GEN_001
 
 OUT_DIR_CREATE:
-	@$(ECHO) using platform: $(PLATFORM)
-	$(RM) -rf $(OUT_ROOT)
+	$(ECHO) using platform: $(PLATFORM)
+	$(RM) -fr $(OUT_ROOT)
 	$(MKDIR) -p $(OUT_ROOT)
 	$(MKDIR) $(OUT_ROOT)/obj
 
 GEN_001: OUT_DIR_CREATE
 	$(MKDIR) -p $(OUT_ROOT)/obj/GEN_001
 	$(MAKE) -C SOURCES
-
-.PHONY: clean
-clean: OUT_DIR
-	$(RM) -rf $(OUT_ROOT)

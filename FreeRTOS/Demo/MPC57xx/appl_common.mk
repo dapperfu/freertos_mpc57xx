@@ -23,7 +23,7 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-CFLAGS += -I$(OS_ROOT)/Demo/Common/include 
+CFLAGS += -I$(shell $(CYGPATH) -m -i $(OS_ROOT))/Demo/Common/include 
 
 OBJFILES_APPL := $(OUT_ROOT)/obj/$(TEST_NAME)/dynamic.o \
 				 $(OUT_ROOT)/obj/$(TEST_NAME)/IntQueue.o \
@@ -42,7 +42,7 @@ OBJFILES_APPL := $(OUT_ROOT)/obj/$(TEST_NAME)/dynamic.o \
 				 $(OUT_ROOT)/obj/$(TEST_NAME)/flop.o
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Demo/Common/Minimal/%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)
 
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: $(OS_ROOT)/Demo/Common/Full/%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $<)

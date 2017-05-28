@@ -23,13 +23,13 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-ASFLAGS  := -g --gdwarf-sections --gstabs+ -L -mregnames -mvle -I$(CRT_DIR)/SOURCES_MPC57XX -I$(CRT_DIR)/src_test_cases/$(TEST_NAME)
+ASFLAGS  := -g --gdwarf-sections --gstabs+ -L -mregnames -mvle -I$(shell $(CYGPATH) -m -i $(CRT_DIR))/SOURCES_MPC57XX -I$(shell $(CYGPATH) -m -i $(CRT_DIR))/src_test_cases/$(TEST_NAME)
 
-CFLAGS   :=  --sysroot=$(COMPILER_LIBS) \
-            -I$(OS_ROOT)/Source/include \
-			-I$(OS_ROOT)/Source/portable/GCC/PowerPC_Z4 \
-			-I$(CRT_DIR)/SOURCES \
-			-I$(CRT_DIR)/SOURCES_MPC57XX \
+CFLAGS   :=  --sysroot=$(shell $(CYGPATH) -m -i $(COMPILER_LIBS)) \
+            -I$(shell $(CYGPATH) -m -i $(OS_ROOT))/Source/include \
+			-I$(shell $(CYGPATH) -m -i $(OS_ROOT))/Source/portable/GCC/PowerPC_Z4 \
+			-I$(shell $(CYGPATH) -m -i $(CRT_DIR))/SOURCES \
+			-I$(shell $(CYGPATH) -m -i $(CRT_DIR))/SOURCES_MPC57XX \
 			-mcpu=e200z4 -mfpu=sp_full -mvle -mfloat-gprs=yes -mhard-float -static \
 			-O3 -g3 -fno-strict-aliasing -Wall -Wextra -Werror -Wdouble-promotion -Wfloat-equal \
 			-Wconversion -Wpointer-arith -std=gnu99 -ffunction-sections -fdata-sections
@@ -43,5 +43,6 @@ else
 endif
 
 
-LDFLAGS :=  --sysroot=$(COMPILER_LIBS) -mcpu=e200z4 -mfpu=sp_full -Xlinker -Map=$(OUT_ROOT)/$(TEST_NAME).map \
-			-nostartfiles -T$(CRT_DIR)/LINKERSCRIPTS/flash_$(PLATFORM).ld -static -Xlinker --gc-sections -Xlinker --print-gc-sections
+LDFLAGS :=  --sysroot=$(shell $(CYGPATH) -m -i $(COMPILER_LIBS)) -mcpu=e200z4 -mfpu=sp_full -Xlinker -Map=$(shell $(CYGPATH) -m -i $(OUT_ROOT)/$(TEST_NAME).map) \
+			-nostartfiles -T$(shell $(CYGPATH) -m -i $(CRT_DIR))/LINKERSCRIPTS/flash_$(PLATFORM).ld -static -Xlinker --gc-sections -Xlinker --print-gc-sections
+			
