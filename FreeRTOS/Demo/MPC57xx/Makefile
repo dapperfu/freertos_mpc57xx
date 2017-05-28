@@ -23,10 +23,9 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-CYGPATH := 
 MAKE	:= make
 MKDIR	:= mkdir
-RM	:= rm
+RM	    := rm
 ECHO	:= echo
 
 include user_paths.mk
@@ -41,10 +40,9 @@ endif
 OUT_ROOT:=$(OUT_DIR)/OUT
 
 
-
-AS		:= $(COMPILER_ROOTDIR)powerpc-eabivle-as
-CC		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc
-LD 		:= $(COMPILER_ROOTDIR)powerpc-eabivle-gcc
+AS		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-as
+CC		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc
+LD 		:= $(COMPILER_ROOTDIR)/powerpc-eabivle-gcc
 
 
 ifndef PLATFORM
@@ -66,11 +64,15 @@ export CYGPATH
 all: OUT_DIR_CREATE GEN_001
 
 OUT_DIR_CREATE:
-	$(ECHO) using platform: $(PLATFORM)
-	$(RM) -fr $(OUT_ROOT)
+	@$(ECHO) using platform: $(PLATFORM)
+	$(RM) -rf $(OUT_ROOT)
 	$(MKDIR) -p $(OUT_ROOT)
 	$(MKDIR) $(OUT_ROOT)/obj
 
 GEN_001: OUT_DIR_CREATE
 	$(MKDIR) -p $(OUT_ROOT)/obj/GEN_001
 	$(MAKE) -C SOURCES
+
+.PHONY: clean
+clean: OUT_DIR
+	$(RM) -rf $(OUT_ROOT)

@@ -23,6 +23,12 @@
 #   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #==================================================================================================
+ifeq ($(OS),Windows_NT)
+	detected_OS := Windows
+else
+	detected_OS := $(shell uname -s)
+endif
+
 
 TEST_NAME := GEN_001
 
@@ -57,4 +63,3 @@ $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: ./%.s
 # Linking
 $(OUT_ROOT)/$(TEST_NAME).elf: $(OBJFILES) 
 	$(LD) $(LDFLAGS) -Xlinker -o -Xlinker $@ $(OBJFILES)
-

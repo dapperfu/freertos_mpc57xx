@@ -23,19 +23,29 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #================================================================================================*/
-# compiler path
-COMPILER_ROOTDIR = /opt/Freescale/S32_Power_v1.1/Cross_Tools/powerpc-eabivle-4_9/bin/
-COMPILER_LIBS = /opt/Freescale/S32_Power_v1.1/S32DS/e200_ewl2
 
+# S32_Power_v1.1 installed to C:\NXP
+# By putting it in 'unix' format we can skip
+# COMPILER_ROOTDIR := 
+# COMPILER_LIBS := 
 # PATH to FreeRTOS code we are testing
-# OS_ROOT := C:/w/FR9.0.0/FreeRTOSv9.0.0/FreeRTOS
-OS_ROOT = /opt/Freescale/freertos/FreeRTOS
-#PATH to LATUTERBACH T32
-LATUTERBACH_PATH := c:/tools/T32
+# OS_ROOT := /cygdrive/c/Freescale/freertos-mpc57xx/FreeRTOS
 
 
-# convert paths to unix
-COMPILER_ROOTDIR := $(COMPILER_ROOTDIR)
-COMPILER_LIBS := $(COMPILER_LIBS)
-OS_ROOT := $(OS_ROOT)
-LATUTERBACH_PATH := $(LATUTERBACH_PATH)
+ifeq ($(detected_OS),Windows)
+	# S32_Power_v1.1 installed to C:\NXP
+	# By putting it in 'unix' format we can skip
+	COMPILER_ROOTDIR := /cygdrive/c/NXP/S32_Power_v1.1/Cross_Tools/powerpc-eabivle-4_9/bin
+	COMPILER_LIBS := /cygdrive/c/NXP/S32_Power_v1.1/S32DS/e200_ewl2
+	# PATH to FreeRTOS code we are testing
+	OS_ROOT := /cygdrive/c/NXP/freertos-mpc57xx/FreeRTOS
+endif
+
+ifeq ($(detected_OS),Linux)
+	# S32_Power_v1.1 installed to /opt/NXP
+	COMPILER_ROOTDIR = /opt/NXP/S32_Power_v1.1/Cross_Tools/powerpc-eabivle-4_9/bin/
+	COMPILER_LIBS = /opt/NXP/S32_Power_v1.1/S32DS/e200_ewl2
+	# PATH to FreeRTOS code we are testing
+	OS_ROOT = /opt/NXP/freertos-mpc57xx/FreeRTOS
+endif
+
