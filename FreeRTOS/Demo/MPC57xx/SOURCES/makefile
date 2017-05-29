@@ -23,12 +23,6 @@
 #   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 #==================================================================================================
-ifeq ($(OS),Windows_NT)
-	detected_OS := Windows
-else
-	detected_OS := $(shell uname -s)
-endif
-
 
 TEST_NAME := GEN_001
 
@@ -54,12 +48,13 @@ all: $(OUT_ROOT)/$(TEST_NAME).elf
 
 # Compiling
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: ./%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $(shell $(CYGPATH) -m -i $@) $<
 
 # Assembling
 $(OUT_ROOT)/obj/$(TEST_NAME)/%.o: ./%.s
-	$(AS) $(ASFLAGS) -o $@ $<
+	$(AS) $(ASFLAGS) -o $(shell $(CYGPATH) -m -i $@) $<
 	
 # Linking
 $(OUT_ROOT)/$(TEST_NAME).elf: $(OBJFILES) 
-	$(LD) $(LDFLAGS) -Xlinker -o -Xlinker $@ $(OBJFILES)
+	$(LD) $(LDFLAGS) -Xlinker -o -Xlinker $(shell $(CYGPATH) -m -i $@) $(shell $(CYGPATH) -m -i $(OBJFILES))
+
