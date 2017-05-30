@@ -24,12 +24,12 @@
 #
 #================================================================================================*/
 # compiler path
-COMPILER_ROOTDIR = /opt/Freescale/S32_Power_v1.1/Cross_Tools/powerpc-eabivle-4_9/bin/
-COMPILER_LIBS = /opt/Freescale/S32_Power_v1.1/S32DS/e200_ewl2
+COMPILER_ROOTDIR = /opt/NXP/S32_Power_v1.1/Cross_Tools/powerpc-eabivle-4_9/bin/
+COMPILER_LIBS = /opt/NXP/S32_Power_v1.1/S32DS/e200_ewl2
 
 # PATH to FreeRTOS code we are testing
 # OS_ROOT := C:/w/FR9.0.0/FreeRTOSv9.0.0/FreeRTOS
-OS_ROOT = /opt/Freescale/freertos/FreeRTOS
+OS_ROOT = /opt/NXP/freertos/FreeRTOS
 #PATH to LATUTERBACH T32
 LATUTERBACH_PATH := c:/tools/T32
 
